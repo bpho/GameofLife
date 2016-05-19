@@ -1,4 +1,4 @@
-# GameofLife
+#Benny's Game Of Life
 
 ###Quick Synopsis
 
