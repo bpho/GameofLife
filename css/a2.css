@@ -1,0 +1,64 @@
+	#header {
+        text-align: center;   
+    }
+    
+/* change background color, look of buttons
+    button {
+        background-color: aqua;   
+    }
+*/
+
+    .radiotext {
+        font-size: 0.8em;   
+        margin-right: 0.5em;
+    }
+
+    #interface label{
+        font-size: 0.8em;   
+    }
+
+    #gridsizing {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    #start, #stop, #step, #intervalSpeed, #getSpeed {
+        margin-right: 1em;   
+    }
+    
+    #generalbuttons, #generaterandom, #speedcontrol, #radioselect, #interface, #title {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    label {
+        margin: 0.4em;   
+    }
+
+    #newcolumns {
+        margin-right: 0.8em;   
+    }
+    
+    form {
+        margin-bottom: 0.5em;    
+    }
+
+    table{
+		width:1em;
+		height:1em;
+        margin-left: auto;
+        margin-right: auto;
+	}
+	table td{
+		padding:5px;
+        margin: 20px;
+		border:1px solid #ccc;
+	}
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+
