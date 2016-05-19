@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>Benny's Game of Life</title>
+        <link rel="stylesheet" href="css/a2.css" type="text/css">
+        <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+        <script type="text/javascript" src="js/a2_final.js"></script>
+        <div id="header"><h1>Benny's Game of Life</h1></div>
+    </head>
+    <body>
+        <form id="gridsizing">
+          <label for="rows">Rows:</label>
+          <input type="text" name="rowinput" id="newrows" maxlength="3" size="4">
+          <label for="columns">Columns:</label>
+          <input type="text" name="columninput" id="newcolumns" maxlength="3" size="4">
+          <input type="submit" id="changedim" value="Change" />
+        </form>
+        <div id="title">
+            <b>Change the Game Rules!</b>
+        </div>
+        <form id="interface">
+            <label for="radius">R:</label>
+            <input type="text" name="radiusinput" id="radiusinput" maxlength="2" size="2">
+            <label for="lonely">L:</label>
+            <input type="text" name="lonelyinput" id="lonelyinput" maxlength="2" size="2">
+            <label for="overpopulation">O:</label>
+            <input type="text" name="overinput" id="overinput" maxlength="2" size="2">
+            <label for="genMin">G<sub>min</sub>:</label>
+            <input type="text" name="gmininput" id="gmininput" maxlength="2" size="2">
+            <label for="genMax">G<sub>max</sub>:</label>
+            <input type="text" name="gmaxinput" id="gmaxinput" maxlength="2" size="2">
+            <input type="submit" id="changeRules" value="Change Rules" disabled="true" />
+            <button type="button" id="resetRules">Reset Rules</button>
+        </form>
+        <div id="speedcontrol">
+            Speed: <input type="range" id="intervalSpeed" min="0" max="1000" value="0">
+            <button type="button" id="getSpeed">Change Speed!</button>
+            <span id="printSpeed"></span>
+        </div>
+        <div id="bordercells">
+            <form id="radioselect">
+                <label for="selection">Outside Cells: </label>
+                <input type="radio" name="outsidecells" value="alldead" /><span class="radiotext">All Dead</span>
+                <input type="radio" name="outsidecells" value="allalive" /><span class="radiotext">All Alive</span>
+                <input type="radio" name="outsidecells" value="toroidal" checked="checked" /><span class="radiotext">Toroidal</span>
+            </form>
+        </div>
+        <div id="generalbuttons">
+            <button type="button" id="start">Start</button>
+            <button type="button" id="stop">Stop</button>
+            <button type="button" id="step">Step</button>
+            <button type="button" id="reset">Reset</button>
+        </div>
+
+        <div id="generaterandom">
+            <button type="button" id="random">Generate Random Grid</button>
+        </div>
+        <table id="grid" cellspacing="0">
+            <tr class="row">
+            </tr>
+        </table>    
+    </body>
+</html>
